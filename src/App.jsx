@@ -1,4 +1,5 @@
 import style from "./style.module.css";
+import Home from "./components/home.jsx";
 
 function App() {
   let backgroundLength = 9;
@@ -7,21 +8,7 @@ function App() {
 
   return (
     <div className={style.pageContainer}>
-      <div className={style.home}>
-        <nav>
-          <ul>
-            <li>HOME</li>
-            <li>SHOP</li>
-            <li>ABOUT</li>
-            <li>CONTACT</li>
-          </ul>
-        </nav>
-        <main>
-          <div className={style.contentBubble}>
-            <h1>MABU - MABU</h1>
-          </div>
-        </main>
-      </div>
+      <Home></Home>
       <div className={style.background}>
         {backgroundArray.map((panelNum) => (
           <div key={panelNum}></div>
