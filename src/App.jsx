@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import Home from "./components/home.jsx";
+import Home from "./components/home/home.jsx";
 
 function App() {
   let backgroundLength = 9;
