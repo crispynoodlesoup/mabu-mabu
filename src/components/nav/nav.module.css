@@ -15,14 +15,38 @@ nav ul {
 }
 
 nav ul li {
-    background-color: hsla(0, 0%, 100%, 50%);
+    position: relative;
+    background-color: white;
     padding: 4px 8px;
     border-radius: 8px;
+    transform-style: preserve-3d;
 
     transition: all 0.3s;
 }
 
+nav ul li::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+
+    content: "";
+    backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
+    transition: all 0.3s;
+
+    /* for keeping ::before behind li */
+    transform: translateZ(-1px);
+}
+
 nav ul li:hover {
     cursor: pointer;
-    background-color: hsla(0, 0%, 100%, 80%);
+    transform: translate(2px, 2px);
+}
+
+nav ul li:hover::before {
+    top: 2px;
+    left: 2px;
 }
