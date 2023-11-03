@@ -1,6 +1,11 @@
+@font-face {
+    font-family: bubbleboddy-neue;
+    src: url(../../assets/bubbleboddy_neue/bubbleboddyneue-regular.ttf);
+}
+
 nav {
     z-index: 1;
-    height: 64px;
+    height: 96px;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     display: flex;
@@ -15,13 +20,19 @@ nav ul {
 }
 
 .navLink {
+    width: 140px;
+    height: 42px;
     position: relative;
-    background-color: white;
-    padding: 4px 8px;
-    border-radius: 8px;
     transform-style: preserve-3d;
+    border-radius: 14px;
+    background-color: #ffffff48;
 
     transition: all 0.2s;
+}
+
+.navLink img {
+    width: 140px;
+    height: 42px;
 }
 
 .navLink::before {
@@ -31,7 +42,7 @@ nav ul {
 
     height: 100%;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 14px;
 
     content: "";
     backdrop-filter: brightness(65%) saturate(120%) contrast(240%);
