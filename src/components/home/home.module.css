@@ -1,3 +1,15 @@
+@font-face {
+    font-family: fredoka;
+    src: url(../../assets/Fredoka/Fredoka-VariableFont.ttf);
+}
+
 .home {
     display: grid;
+}
+
+h1 {
+    color: #ffd744;
+    font-size: 128px;
+    font-family: fredoka;
+    text-shadow: 8px 8px 0 #ffeeb1;
 }
