@@ -14,17 +14,17 @@ nav ul {
     gap: 32px;
 }
 
-nav ul li {
+.navLink {
     position: relative;
     background-color: white;
     padding: 4px 8px;
     border-radius: 8px;
     transform-style: preserve-3d;
 
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
-nav ul li::before {
+.navLink::before {
     position: absolute;
     top: 4px;
     left: 4px;
@@ -35,18 +35,27 @@ nav ul li::before {
 
     content: "";
     backdrop-filter: brightness(65%) saturate(120%) contrast(240%);
-    transition: all 0.3s;
+    transition: all 0.2s;
 
     /* for keeping ::before behind li */
     transform: translateZ(-1px);
 }
 
-nav ul li:hover {
+.navLink:hover {
     cursor: pointer;
     transform: translate(2px, 2px);
 }
 
-nav ul li:hover::before {
+.navLink:hover::before {
     top: 2px;
     left: 2px;
+}
+
+.navLink:active {
+    transform: translate(4px, 4px);
+}
+
+.navLink:active::before {
+    top: 0;
+    left: 0;
 }

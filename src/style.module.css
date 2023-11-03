@@ -1,3 +1,7 @@
+:root {
+    --background-panel-height: 800px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,15 +10,6 @@
 
 ul {
     list-style: none;
-}
-
-@keyframes backgroundScroll {
-    0% {
-        top: -360vh;
-    }
-    100% {
-        top: 0;
-    }
 }
 
 .pageContainer {
@@ -31,6 +26,10 @@ main {
     grid-column: 1 / 1;
     display: grid;
     justify-content: center;
+}
+
+.titleBubble {
+    margin-top: 32px;
 }
 
 .contentBubble {
@@ -60,18 +59,30 @@ main {
     transform: translateZ(-10px);
 }
 
+@keyframes backgroundScroll {
+    0% {
+        top: calc(var(--background-panel-height) * -7);
+    }
+    100% {
+        top: calc(var(--background-panel-height) * -4);
+    }
+}
+
 .background {
+
     z-index: -1;
     position: absolute;
     height: 100vh;
     width: 100vw;
 
-    animation: backgroundScroll 20s linear infinite;
+    animation: backgroundScroll 25s linear infinite;
 }
 
 .background div {
-    height: 120%;
-    width: 100%;
+    height: var(--background-panel-height);
+    width: calc(142vw + var(--background-panel-height));
+    transform-origin: top left;
+    transform: rotate(45deg);
 }
 
 .background div:nth-child(3n) {
