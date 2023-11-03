@@ -9,6 +9,7 @@
 }
 
 .heroTitle {
+    margin-top: 24px;
     color: #ffd744;
     font-size: 128px;
     text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
