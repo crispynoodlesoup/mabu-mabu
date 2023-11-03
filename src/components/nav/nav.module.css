@@ -1,6 +1,6 @@
 nav {
     z-index: 1;
-    height: 48px;
+    height: 64px;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     display: flex;
@@ -11,7 +11,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 20px;
+    gap: 32px;
 }
 
 nav ul li {
@@ -31,10 +31,10 @@ nav ul li::before {
 
     height: 100%;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 
     content: "";
-    backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
+    backdrop-filter: brightness(65%) saturate(120%) contrast(240%);
     transition: all 0.3s;
 
     /* for keeping ::before behind li */

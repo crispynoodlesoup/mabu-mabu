@@ -38,6 +38,26 @@ main {
     padding: 32px;
     background-color: white;
     border-radius: 32px;
+    
+    position: relative;
+
+    transform-style: preserve-3d;
+}
+
+.contentBubble::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+
+    content: "";
+    backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
+
+    /* for keeping ::before behind li */
+    transform: translateZ(-10px);
 }
 
 .background {
