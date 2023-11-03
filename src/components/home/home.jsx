@@ -8,7 +8,7 @@ function Home() {
       <Nav></Nav>
       <main>
         <div className={`${style.contentBubble} ${style.titleBubble}`}>
-          <h1>MABU - MABU</h1>
+          <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
         </div>
       </main>
     </div>

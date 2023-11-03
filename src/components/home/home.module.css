@@ -1,15 +1,17 @@
 @font-face {
-    font-family: fredoka;
-    src: url(../../assets/Fredoka/Fredoka-VariableFont.ttf);
+  font-family: fredoka;
+  src: url(../../assets/Fredoka/Fredoka-VariableFont.ttf);
 }
 
 .home {
     display: grid;
+    background-clip: border-box;
 }
 
-h1 {
+.heroTitle {
     color: #ffd744;
     font-size: 128px;
+    text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
+    white-space: nowrap;
     font-family: fredoka;
-    text-shadow: 8px 8px 0 #ffeeb1;
 }
