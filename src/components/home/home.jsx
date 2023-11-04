@@ -7,7 +7,7 @@ function Home() {
     <div className={homeStyle.home}>
       <Nav></Nav>
       <main>
-        <div className={`${style.contentBubble} ${style.titleBubble}`}>
+        <div className={`${style.contentBubble} ${homeStyle.titleBubble}`}>
           <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
         </div>
       </main>

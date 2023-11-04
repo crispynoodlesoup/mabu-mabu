@@ -22,24 +22,19 @@ ul {
 
 main {
     padding: 64px;
+    padding-top: 96px;
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     display: grid;
     justify-content: center;
 }
 
-.titleBubble {
-    margin-top: 32px;
-}
-
 .contentBubble {
-    height: fit-content;
+    position: relative;
     padding: 32px;
     background-color: white;
     border-radius: 32px;
     
-    position: relative;
-
     transform-style: preserve-3d;
 }
 
