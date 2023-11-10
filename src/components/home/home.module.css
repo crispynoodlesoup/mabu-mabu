@@ -28,8 +28,19 @@
   text-align: center;
   color: #ffd744;
   width: 100%;
-  font-size: 128px;
+  font-size: calc(14vw - 16px);
   text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
   white-space: nowrap;
   font-family: fredoka;
+
+}
+
+@media screen and (min-width: 1028px) {
+  .heroTitle {
+    font-size: 128px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  
 }
