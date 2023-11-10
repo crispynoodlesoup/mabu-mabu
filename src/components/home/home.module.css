@@ -4,18 +4,19 @@
 }
 
 .home {
-    display: grid;
-    background-clip: border-box;
+  display: grid;
+  background-clip: border-box;
 }
 
 .titleBubble {
-  max-width: 100%;
+  max-width: 900px;
+  width: 100%;
+  justify-self: center;
 }
 
 .titleStripe {
   display: flex;
   gap: 200px;
-
 }
 
 .titleStripe div {
@@ -24,9 +25,11 @@
 }
 
 .heroTitle {
-    color: #ffd744;
-    font-size: 128px;
-    text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
-    white-space: nowrap;
-    font-family: fredoka;
+  text-align: center;
+  color: #ffd744;
+  width: 100%;
+  font-size: 128px;
+  text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
+  white-space: nowrap;
+  font-family: fredoka;
 }
