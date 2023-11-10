@@ -34,6 +34,7 @@ main {
     padding: 32px;
     background-color: white;
     border-radius: 32px;
+ 
     
     transform-style: preserve-3d;
 }
@@ -52,6 +53,10 @@ main {
 
     /* for keeping ::before behind li */
     transform: translateZ(-10px);
+}
+
+.contentWrapper {
+    overflow: hidden;
 }
 
 @keyframes backgroundScroll {

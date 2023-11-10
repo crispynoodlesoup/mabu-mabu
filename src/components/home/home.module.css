@@ -8,10 +8,22 @@
     background-clip: border-box;
 }
 
-/* .titleBubble {} */
+.titleBubble {
+  max-width: 100%;
+}
+
+.titleStripe {
+  display: flex;
+  gap: 200px;
+
+}
+
+.titleStripe div {
+  width: 100%;
+  border-top: 12px dashed #ffe581;
+}
 
 .heroTitle {
-    margin-top: 24px;
     color: #ffd744;
     font-size: 128px;
     text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
