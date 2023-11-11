@@ -154,7 +154,7 @@ nav ul {
     transition: all 0.01s;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     nav ul {
         gap: 16px;
         grid-template-columns: repeat(4, minmax(32px, 150px));
