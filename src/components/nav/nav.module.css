@@ -3,6 +3,11 @@
     src: url(../../assets/bubbleboddy_neue/bubbleboddyneue-regular.ttf);
 }
 
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
 nav {
     z-index: 1;
     max-width: 100vw;
@@ -90,68 +95,40 @@ nav ul {
 }
 
 .selected {
-    aspect-ratio: 136 / 38;
+    aspect-ratio: 140 / 42;
     max-width: 100%;
-    width: 136px;
+    width: 140px;
     height: auto;
     font-size: 28px;
     font-family: bubbleboddy-neue;
     color: white;
 
     border-radius: 14px 12px;
+    overflow: hidden;
+    background-color: #ffffff00;
 
     display: grid;
     place-content: center;
     text-align: center;
     transform: translate(4px, 4px);
-    background-color: #ffffff52;
-
-}
-
-.selected::before {
-    top: -4px;
-    left: -4px;
-
-    height: calc(100% + 4px);
-    width: calc(100% + 4px);
-    
     border-bottom: 1px solid hsl(40, 100%, 98%);
     backdrop-filter: brightness(62%) saturate(190%) contrast(200%) sepia(20%);
 }
 
-.selected:hover {
+.selected img {
+    transform: translate(4px, 4px);
+    transition: all 0.2s;
+}
+
+.selected:hover img {
     cursor: pointer;
-    width: 138px;
-    height: 40px;
-    border-radius: 14px;
-    transform: translate(3px, 3px);
-    background-color: #ffffff52;
+    transform: translate(2px, 2px);
 }
 
-.selected:hover::before {
-    top: -2px;
-    left: -2px;
-    height: calc(100% + 2px);
-    width: calc(100% + 2px);
-    backdrop-filter: brightness(64%) saturate(210%) contrast(170%);
-}
-
-.selected:active {
-    width: 134px;
-    height: 36px;
-    border-radius: 14px 8px;
-    transform: translate(5px, 5px);
-    background-color: #ffffff40;
-    transition: all 0.01s;
-}
-
-.selected:active::before {
-    top: -6px;
-    left: -6px;
-    height: calc(100% + 6px);
-    width: calc(100% + 6px);
-    backdrop-filter: brightness(62%) saturate(190%) contrast(200%) sepia(20%);
-    transition: all 0.01s;
+.selected:active img {
+    cursor: pointer;
+    transform: translate(6px, 6px);
+    transition: all 0.04s;
 }
 
 @media screen and (max-width: 720px) {
