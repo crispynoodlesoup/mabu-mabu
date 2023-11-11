@@ -8,6 +8,14 @@
   background-clip: border-box;
 }
 
+.gridWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 900px);
+  grid-template-rows: min-content;
+  place-content: center;
+}
+
 .titleStripe {
   display: flex;
   gap: 200px;

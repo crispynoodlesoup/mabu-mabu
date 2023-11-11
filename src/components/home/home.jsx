@@ -9,13 +9,15 @@ function Home() {
     <div className={homeStyle.home}>
       <Nav></Nav>
       <main>
-        <ContentBubble>
-          <div className={homeStyle.titleStripe}>
-            <div></div>
-            <div></div>
-          </div>
-          <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
-        </ContentBubble>
+        <div className={homeStyle.gridWrapper}>
+          <ContentBubble>
+            <div className={homeStyle.titleStripe}>
+              <div></div>
+              <div></div>
+            </div>
+            <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
+          </ContentBubble>
+        </div>
       </main>
     </div>
   );
