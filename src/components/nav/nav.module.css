@@ -157,9 +157,14 @@ nav ul {
 @media screen and (max-width: 600px) {
     nav ul {
         gap: 16px;
+        grid-template-columns: repeat(4, minmax(32px, 150px));
     }
 
     .selected {
-        font-size: 18px;
+        font-size: 24px;
+    }
+    
+    .iceCream {
+        display: none;
     }
 }

@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .titleStripe div {
-    border-top: 8px dashed #ffe581;
+  .titleStripe {
+    display: none;
   }
 }
