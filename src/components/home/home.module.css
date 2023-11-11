@@ -8,12 +8,6 @@
   background-clip: border-box;
 }
 
-.titleBubble {
-  max-width: 900px;
-  width: 100%;
-  justify-self: center;
-}
-
 .titleStripe {
   display: flex;
   gap: 200px;
