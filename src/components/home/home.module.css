@@ -45,4 +45,8 @@
   .titleStripe {
     display: none;
   }
+
+  .heroTitle {
+    text-shadow: 4px 4px 0px hsl(50, 100%, 82%);
+  }
 }
