@@ -36,86 +36,50 @@ nav ul {
 }
 
 .navLink {
-    margin: auto;
+    position: relative;
     aspect-ratio: 140 / 42;
     max-width: 100%;
     width: 140px;
     height: auto;
-    position: relative;
-    transform-style: preserve-3d;
+    margin: auto;
     border-radius: 14px;
-    background-color: #ffffff48;
+    backdrop-filter: brightness(65%) saturate(120%) contrast(240%);
 
     transition: all 0.2s;
 }
 
 .navLink img {
     position: absolute;
+    aspect-ratio: 140 / 42;
     max-width: 100%;
     width: 140px;
-    aspect-ratio: 140 / 42;
-}
-
-.navLink::before {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-
-    height: 100%;
-    width: 100%;
     border-radius: 14px;
-
-    content: "";
-    backdrop-filter: brightness(65%) saturate(120%) contrast(240%);
+    background-color: #ffffff48;
+    transform: translate(-4px, -4px);
     transition: all 0.2s;
-
-    /* for keeping ::before behind li */
-    transform: translateZ(-1px);
 }
 
 .navLink:not(.selected):hover {
     cursor: pointer;
-    transform: translate(2px, 2px);
 }
 
-.navLink:not(.selected):hover::before {
-    top: 2px;
-    left: 2px;
+.navLink:not(.selected):hover img {
+    transform: translate(-2px, -2px);
 }
 
-.navLink:not(.selected):active {
+.navLink:not(.selected):active img {
     transition: all 0.01s;
-    transform: translate(4px, 4px);
-}
-
-.navLink:not(.selected):active::before {
-    transition: all 0.01s;
-    top: 0;
-    left: 0;
+    transform: translate(0, 0);
 }
 
 .selected {
-    aspect-ratio: 140 / 42;
-    max-width: 100%;
-    width: 140px;
-    height: auto;
-    font-size: 28px;
-    font-family: bubbleboddy-neue;
-    color: white;
-
-    border-radius: 14px 12px;
-    overflow: hidden;
     background-color: #ffffff00;
-
-    display: grid;
-    place-content: center;
-    text-align: center;
-    transform: translate(4px, 4px);
+    overflow: hidden;
     border-bottom: 1px solid hsl(40, 100%, 98%);
-    backdrop-filter: brightness(62%) saturate(190%) contrast(200%) sepia(20%);
 }
 
 .selected img {
+    background-color: #ffffff00;
     transform: translate(4px, 4px);
     transition: all 0.2s;
 }
