@@ -9,11 +9,13 @@
 }
 
 .gridWrapper {
+  margin-top: 32px;
   width: 100%;
   display: grid;
-  grid-template-columns: minmax(0, 900px);
-  grid-template-rows: min-content;
+  grid-template-columns: 500px 300px;
+  grid-auto-rows: min-content;
   place-content: center;
+  gap: 32px;
 }
 
 .titleStripe {

@@ -9,13 +9,19 @@ function Home() {
     <div className={homeStyle.home}>
       <Nav></Nav>
       <main>
-        <div className={homeStyle.gridWrapper}>
           <ContentBubble>
             <div className={homeStyle.titleStripe}>
               <div></div>
               <div></div>
             </div>
             <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
+          </ContentBubble>
+        <div className={homeStyle.gridWrapper}>
+          <ContentBubble>
+            <h2>woew</h2>
+          </ContentBubble>
+          <ContentBubble>
+            <h2>woew 2</h2>
           </ContentBubble>
         </div>
       </main>
