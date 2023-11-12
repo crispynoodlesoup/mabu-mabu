@@ -1,19 +1,13 @@
 .shadow {
     position: relative;
-    border-radius: 32px;
     backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
-    transform: translate(16px,16px);
+    transform: translateY(16px);
 }
 
 .bubble {
     padding: 32px;
-    border-radius: 32px;
     background-color: white;
     height: 100%;
     width: 100%;
-    transform: translate(-16px,-16px);
-}
-
-.contentWrapper {
-    overflow: hidden;
+    transform: translateY(-16px);
 }
