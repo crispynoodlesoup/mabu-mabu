@@ -1,8 +1,9 @@
 .shadow {
+    --shadow-offset: 12px;
     position: relative;
     border-radius: 32px;
     backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
-    transform: translate(16px,16px);
+    transform: translate(var(--shadow-offset),var(--shadow-offset));
 }
 
 .bubble {
@@ -11,7 +12,7 @@
     background-color: white;
     height: 100%;
     width: 100%;
-    transform: translate(-16px,-16px);
+    transform: translate(calc(-1 * var(--shadow-offset)),calc(-1 * var(--shadow-offset)));
 }
 
 .contentWrapper {
