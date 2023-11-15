@@ -8,14 +8,8 @@ import PageHeader from "../pageHeader/PageHeader.jsx";
 function Home() {
   return (
     <div className={homeStyle.home}>
-      <Nav></Nav>
-      <PageHeader>
-        <div className={homeStyle.titleStripe}>
-          <div></div>
-          <div></div>
-        </div>
-        <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
-      </PageHeader>
+      <Nav/>
+      <PageHeader text={"MABU - MABU"}/>
       <main>
         <div className={homeStyle.gridWrapper}>
           <ContentBubble>
