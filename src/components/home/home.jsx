@@ -9,14 +9,14 @@ function Home() {
   return (
     <div className={homeStyle.home}>
       <Nav></Nav>
+      <PageHeader>
+        <div className={homeStyle.titleStripe}>
+          <div></div>
+          <div></div>
+        </div>
+        <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
+      </PageHeader>
       <main>
-        <PageHeader>
-          <div className={homeStyle.titleStripe}>
-            <div></div>
-            <div></div>
-          </div>
-          <h1 className={homeStyle.heroTitle}>MABU - MABU</h1>
-        </PageHeader>
         <div className={homeStyle.gridWrapper}>
           <ContentBubble>
             <h2>woew</h2>
