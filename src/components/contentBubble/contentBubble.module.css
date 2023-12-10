@@ -15,6 +15,14 @@
     transform: translate(calc(-1 * var(--shadow-offset)),calc(-1 * var(--shadow-offset)));
 }
 
+h2 {
+    font-family: arvo;
+    color: #945148;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
 .contentWrapper {
     overflow: hidden;
 }

@@ -13,10 +13,10 @@ function Home() {
       <main>
         <div className={homeStyle.gridWrapper}>
           <ContentBubble>
-            <h2>woew</h2>
+            <h2>Title One</h2>
           </ContentBubble>
           <ContentBubble>
-            <h2>woew 2</h2>
+            <h2 style={{color: "#ff99b8"}}>Title Two</h2>
           </ContentBubble>
         </div>
       </main>

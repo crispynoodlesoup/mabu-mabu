@@ -1,3 +1,13 @@
+@font-face {
+    font-family: fredoka;
+    src: url(./assets/Fredoka/Fredoka-VariableFont.ttf);
+}
+
+@font-face {
+    font-family: arvo;
+    src: url(./assets/Arvo/Arvo-Regular.ttf);
+}
+
 :root {
     --background-panel-height: 800px;
 }
