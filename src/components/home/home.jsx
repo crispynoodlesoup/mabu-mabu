@@ -13,7 +13,8 @@ function Home() {
       <main>
         <div className={homeStyle.gridWrapper}>
           <ContentBubble>
-            <h2>Title One</h2>
+            <h2>Welcome to Mabu-Mabu!</h2>
+            <p>Your one-stop ice cream shop is awaiting your order with all the flavors, from mousse to mango! Be sure to try our specialty items shipped from across the world!</p>
           </ContentBubble>
           <ContentBubble>
             <h2 style={{color: "#ff99b8"}}>Title Two</h2>

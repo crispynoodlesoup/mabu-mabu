@@ -15,9 +15,16 @@
     transform: translate(calc(-1 * var(--shadow-offset)),calc(-1 * var(--shadow-offset)));
 }
 
+p {
+    margin-top: 6px;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+}
+
 h2 {
     font-family: arvo;
-    color: #945148;
+    color: #a56961;
     font-weight: bold;
     font-size: 28px;
     text-align: center;
