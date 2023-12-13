@@ -1,7 +1,6 @@
-// eslint-disable-next-line
+import PropTypes from "prop-types";
 import pageHeaderStyle from "./pageHeader.module.css";
 
-// eslint-disable-next-line
 function PageHeader({ text }) {
   return (
     <header className={pageHeaderStyle.shadow}>
@@ -14,6 +13,14 @@ function PageHeader({ text }) {
       </div>
     </header>
   );
+}
+
+PageHeader.propTypes = {
+  text: PropTypes.string,
+}
+
+PageHeader.defaultProps = {
+  text: "MABU-MABU",
 }
 
 export default PageHeader;
