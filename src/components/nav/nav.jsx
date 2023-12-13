@@ -1,5 +1,4 @@
 import navStyle from "./nav.module.css";
-// eslint-disable-next-line
 import homeButton from "../../assets/home_selected.svg";
 import shopButton from "../../assets/shop.svg";
 import aboutButton from "../../assets/about.svg";

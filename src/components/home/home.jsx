@@ -1,6 +1,4 @@
 import Nav from "../nav/nav.jsx";
-// eslint-disable-next-line
-import style from "../../style.module.css";
 import homeStyle from "./home.module.css";
 import ContentBubble from "../contentBubble/ContentBubble.jsx";
 import PageHeader from "../pageHeader/PageHeader.jsx";
