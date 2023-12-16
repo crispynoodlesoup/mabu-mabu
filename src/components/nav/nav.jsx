@@ -4,17 +4,18 @@ import shopButton from "../../assets/shop.svg";
 import aboutButton from "../../assets/about.svg";
 import contactButton from "../../assets/contact.svg";
 import iceCream from "../../assets/ice-cream.svg"
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
     <nav>
       <ul>
-        <li className={`${navStyle.navLink} ${navStyle.selected}`}>
+        <Link to="/" className={`${navStyle.navLink} ${navStyle.selected}`}>
           <img src={homeButton} alt="" />
-        </li>
-        <li className={navStyle.navLink}>
+        </Link>
+        <Link to="/shop" className={navStyle.navLink}>
           <img src={shopButton} alt="" />
-        </li>
+        </Link>
         <img className={navStyle.iceCream} src={iceCream} alt="" />
         <li className={navStyle.navLink}>
           <img src={aboutButton} alt="" />
