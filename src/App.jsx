@@ -1,5 +1,5 @@
 import style from "./style.module.css";
-import Home from "./components/home/home.jsx";
+import { Outlet } from "react-router-dom";
 
 function App() {
   let backgroundLength = 9;
@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className={style.pageContainer}>
-      <Home></Home>
+      <Outlet />
       <div className={style.background}>
         {backgroundArray.map((panelNum) => (
           <div key={panelNum}></div>
