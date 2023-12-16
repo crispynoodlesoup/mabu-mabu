@@ -5,7 +5,7 @@
 }
 
 .bubble {
-  padding: 32px;
+  padding: 32px 24px;
   background-color: white;
   height: 100%;
   width: 100%;
@@ -26,15 +26,19 @@
   text-align: center;
   color: #ffd744;
   width: 100%;
-  font-size: calc(14vw - 16px);
+  font-size: 128px;
   text-shadow: 8px 8px 0px hsl(50, 100%, 82%);
   white-space: nowrap;
   font-family: fredoka;
 }
 
-@media screen and (min-width: 1028px) {
+@media screen and (max-width: 1028px) {
   .heroTitle {
-    font-size: 128px;
+    font-size: calc(14vw - 16px);
+  }
+
+  .titleStripe {
+    gap: 22%;
   }
 }
 

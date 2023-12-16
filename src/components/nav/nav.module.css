@@ -31,8 +31,8 @@ nav ul {
 .iceCream {
     max-width: 100%;
     margin: auto;
-    height: 150px;
-    transform: translateY(30%);
+    height: 140px;
+    transform: translateY(28%) scaleX(1.05);
 }
 
 .navLink {
