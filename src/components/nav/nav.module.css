@@ -31,7 +31,7 @@ nav ul {
 .iceCream {
     max-width: 100%;
     margin: auto;
-    height: 140px;
+    height: 136px;
     transform: translateY(28%) scaleX(1.05);
 }
 
@@ -93,6 +93,12 @@ nav ul {
     cursor: pointer;
     transform: translate(6px, 6px);
     transition: all 0.04s;
+}
+
+@media screen and (max-width: 1028px) {
+    nav ul {
+        gap: 24px;
+    }
 }
 
 @media screen and (max-width: 720px) {
