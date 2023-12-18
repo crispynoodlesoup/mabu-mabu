@@ -17,9 +17,9 @@ function Nav() {
           <img src={shopButton} alt="" />
         </Link>
         <img className={navStyle.iceCream} src={iceCream} alt="" />
-        <li className={navStyle.navLink}>
+        <Link to="/about" className={navStyle.navLink}>
           <img src={aboutButton} alt="" />
-        </li>
+        </Link>
         <li className={navStyle.navLink}>
           <img src={contactButton} alt="" />
         </li>
