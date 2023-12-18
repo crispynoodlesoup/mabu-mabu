@@ -1,12 +1,10 @@
-import Nav from "../nav/nav.jsx";
 import homeStyle from "./home.module.css";
 import ContentBubble from "../contentBubble/ContentBubble.jsx";
 import PageHeader from "../pageHeader/PageHeader.jsx";
 
 function Home() {
   return (
-    <div className={homeStyle.home}>
-      <Nav/>
+    <>
       <PageHeader text={"MABU - MABU"}/>
       <main>
         <div className={homeStyle.gridWrapper}>
@@ -19,7 +17,7 @@ function Home() {
           </ContentBubble>
         </div>
       </main>
-    </div>
+    </>
   );
 }
 

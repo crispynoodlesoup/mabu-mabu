@@ -1,7 +1,3 @@
-.home {
-  display: grid;
-}
-
 .gridWrapper {
   width: min(900px, 100%);
 

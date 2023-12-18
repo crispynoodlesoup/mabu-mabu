@@ -1,4 +1,5 @@
 import style from "./style.module.css";
+import Nav from "./components/nav/nav";
 import { Outlet } from "react-router-dom";
 
 function App() {
@@ -8,7 +9,10 @@ function App() {
 
   return (
     <div className={style.pageContainer}>
-      <Outlet />
+      <div className={style.pageContent}>
+        <Nav/>
+        <Outlet />
+      </div>
       <div className={style.background}>
         {backgroundArray.map((panelNum) => (
           <div key={panelNum}></div>
