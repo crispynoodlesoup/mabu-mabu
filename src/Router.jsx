@@ -4,6 +4,7 @@ import ErrorPage from "./ErrorPage";
 import Home from "./components/home/home";
 import Shop from "./components/shop/shop";
 import About from "./components/about/about";
+import Contact from "./components/contact/contact";
 
 function Router() {
   const router = createBrowserRouter([
@@ -15,6 +16,7 @@ function Router() {
         { index: true, element: <Home/> },
         { path: "shop", element: <Shop/> },
         { path: "about", element: <About/> },
+        { path: "contact", element: <Contact/> },
       ],
     },
   ]);

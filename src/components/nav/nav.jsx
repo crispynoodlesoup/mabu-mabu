@@ -20,9 +20,9 @@ function Nav() {
         <Link to="/about" className={navStyle.navLink}>
           <img src={aboutButton} alt="" />
         </Link>
-        <li className={navStyle.navLink}>
+        <Link to="/contact" className={navStyle.navLink}>
           <img src={contactButton} alt="" />
-        </li>
+        </Link>
       </ul>
     </nav>
   );
