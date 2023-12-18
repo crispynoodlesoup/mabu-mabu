@@ -3,7 +3,7 @@ import shopStyle from "./shop.module.css";
 // import ContentBubble from "../contentBubble/ContentBubble.jsx";
 import PageHeader from "../pageHeader/PageHeader.jsx";
 
-function Home() {
+function Shop() {
   return (
     <div className={shopStyle.shop}>
       <Nav/>
@@ -12,4 +12,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Shop;
