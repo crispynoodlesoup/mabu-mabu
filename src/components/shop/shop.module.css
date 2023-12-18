@@ -1,0 +1,9 @@
+.gridWrapper {
+  width: min(900px, 100%);
+
+  justify-self: center;
+  display: grid;
+  grid-auto-rows: min-content;
+  place-content: center;
+  gap: 32px;
+}
