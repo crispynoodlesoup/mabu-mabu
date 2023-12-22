@@ -1,35 +1,38 @@
 .shadow {
-    --shadow-offset: 12px;
-    position: relative;
-    border-radius: 32px;
-    backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
-    transform: translate(var(--shadow-offset),var(--shadow-offset));
+  --shadow-offset: 12px;
+  position: relative;
+  border-radius: 32px;
+  backdrop-filter: brightness(70%) saturate(120%) contrast(220%);
+  transform: translate(var(--shadow-offset), var(--shadow-offset));
 }
 
 .bubble {
-    padding: 32px;
-    border-radius: 32px;
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    transform: translate(calc(-1 * var(--shadow-offset)),calc(-1 * var(--shadow-offset)));
+  padding: 32px;
+  border-radius: 32px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  transform: translate(
+    calc(-1 * var(--shadow-offset)),
+    calc(-1 * var(--shadow-offset))
+  );
 }
 
 p {
-    margin-top: 6px;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
 }
 
 h2 {
-    font-family: arvo;
-    color: #a56961;
-    font-weight: bold;
-    font-size: 28px;
-    text-align: center;
+  font-family: arvo;
+  color: #a56961;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
 }
 
 .contentWrapper {
-    overflow: hidden;
+  overflow: hidden;
 }
