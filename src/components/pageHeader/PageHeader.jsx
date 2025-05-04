@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import pageHeaderStyle from "./pageHeader.module.css";
+import iceCream from "../../assets/ice-cream.svg";
 
 function PageHeader({ text }) {
   return (
@@ -9,6 +10,7 @@ function PageHeader({ text }) {
           <div></div>
           <div></div>
         </div>
+        <img className={pageHeaderStyle.iceCream} src={iceCream} alt="" />
         <h1 className={pageHeaderStyle.heroTitle}>{text}</h1>
       </div>
     </header>
