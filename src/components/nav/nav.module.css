@@ -103,6 +103,14 @@ nav ul:nth-child(4) {
 }
 
 @media screen and (max-width: 720px) {
+  nav ul .navLink:nth-child(3) {
+    grid-column: 3;
+  }
+  
+  nav ul:nth-child(4) {
+    grid-column: 4;
+  }
+
   nav ul {
     gap: 16px;
     grid-template-columns: repeat(4, minmax(32px, 150px));
@@ -110,9 +118,5 @@ nav ul:nth-child(4) {
 
   .selected {
     font-size: 24px;
-  }
-
-  .iceCream {
-    display: none;
   }
 }

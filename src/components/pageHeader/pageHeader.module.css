@@ -55,7 +55,19 @@
 }
 
 @media screen and (max-width: 720px) {
+  .iceCream {
+    height: 100px;
+  }
+  
   .heroTitle {
     text-shadow: 4px 4px 0px hsl(50, 100%, 82%);
+  }
+
+  .titleStripe {
+    gap: 120px;
+  }
+
+  .titleStripe div{
+    border-top: 8px dashed #ffe581;
   }
 }
